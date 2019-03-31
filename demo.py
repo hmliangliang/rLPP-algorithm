@@ -19,7 +19,7 @@ if __name__ == '__main__':
     label = data[:,data.shape[1]-1].reshape(data.shape[0],1)#获取类标签
     data = data[:,0:data.shape[0]-1]#获取数据部分
     d = min(d,data.shape[1])#防止d设置超过了原先数据的维度
-    data = rLPP.rLLP(data,d)
+    data = rLPP.rLPP(data,d)
     num = int(2*data.shape[0]/3)
     model = KNeighborsClassifier(n_neighbors = 5)#训练分类器
     model.fit(data[0:num,:],label[0:num,0])
