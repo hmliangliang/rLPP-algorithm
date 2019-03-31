@@ -16,9 +16,9 @@ def f(X,S,W,p):#计算目标优化函数值
      return f;
 
 
-def rLLP(data,d):
+def rLPP(data,d):
     '''
-    此算法执行的是rLLP算法,主要的功能是实现数据的降维
+    此算法执行的是rLPP算法,主要的功能是实现数据的降维
 	Wang H, Nie F, Huang H. Learning robust locality preserving projection via p-order minimization[C]//Twenty-Ninth AAAI Conference on Artificial Intelligence. 2015:3059-3065.
     data: 数据n*m,每一行代表一个样本,每一列代表一个特征 d:降维后数据的维度
     return: 返回的是一个n*d的数据,数据每一行代表一个样本,每一列代表一个特征
